@@ -1,6 +1,8 @@
 # twomatrix
 https://nicuflorica.blogspot.ro/
 
+![real](https://github.com/tehniq3/twomatrix/blob/master/twomatrix_real.jpg)
+
 it use info from: 
 - https://www.instructables.com/id/Digital-and-Binary-Clock-With-Two-LED-Matrix-and-R/
 - https://www.hackster.io/garysat/arduino-cheap-minimal-parts-digital-clock-0d750a
