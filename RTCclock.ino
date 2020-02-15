@@ -825,7 +825,7 @@ void loop() {
   DateTime now = rtc.now();  // read RTC
    h = now.hour(), DEC;
    m = now.minute(), DEC;
-  if ( h > 12) h = 1; 
+  if ( h > 12) h = h - 12; 
   if ( h == 0) h = 12;  
     Serial.print(h);
     Serial.print(':');
