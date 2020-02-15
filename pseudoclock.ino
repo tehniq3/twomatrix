@@ -6,9 +6,9 @@
 
 
 #include <LedControl.h>
-#include <Wire.h>
-#include <Time.h>
-#include <TimeLib.h>
+//#include <Wire.h>
+//#include <Time.h>
+//#include <TimeLib.h>
 
 
 /*
@@ -21,8 +21,8 @@ LedControl lc = LedControl(12, 10, 11, 2);
 
 byte mm1, mm5, h, m, s;
 byte ultM = 10, ultH = 10;
-byte hPin = 7, mPin = 6;
-boolean ajustaH = true, ajustaM = true;
+//byte hPin = 7, mPin = 6;
+//boolean ajustaH = true, ajustaM = true;
 byte secunda = 0;
 byte secunda0 = 0;
 
@@ -34,12 +34,9 @@ void setup() {
   lc.setIntensity(1, 2);     // Set the brightness to maximum value
   lc.clearDisplay(1);         // and clear the display
 
-
-
-
   Serial.begin(9600);
-  pinMode(hPin, INPUT_PULLUP);
-  pinMode(mPin, INPUT_PULLUP);
+ // pinMode(hPin, INPUT_PULLUP);
+ // pinMode(mPin, INPUT_PULLUP);
 }
 
 void Display() {
@@ -807,11 +804,11 @@ else
 
 
 void loop() {
+ /*
   // Setup of Hours & Minutes
   ajustaH = digitalRead(hPin);
   ajustaM = digitalRead(mPin);
 
-/*
   if (!ajustaH) {
     adjustTime(3600);
   }
