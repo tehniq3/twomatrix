@@ -834,7 +834,7 @@ void loop() {
 
   if (!ajustaH) {
     h = h + 1;
-    if ( h > 23) h = 0; 
+    if ( h > 23) h = 1; 
     rtc.adjust(DateTime(2020, 2, 16, h, m, 0));
   }
 
@@ -851,7 +851,7 @@ void loop() {
     Serial.print(':');
     Serial.print(m0);
     Serial.print(" ->");
-  if (h > 12) h = h0 - 12; 
+  if (h0 > 12) h = h0 - 12; 
   else
   h = h0;
   if ( h == 0) h = 12;  
